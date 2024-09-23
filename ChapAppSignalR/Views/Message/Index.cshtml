@@ -1,0 +1,116 @@
+﻿@using ChapAppSignalR.ViewModels
+@model MessageViewModel
+
+@{
+    ViewData["Title"] = "Messages";
+}
+
+<div class="container mt-5">
+    <h2>@Model.ReceiverName</h2>
+
+    <div class="chat-box">
+        <!-- Önceki mesajları göster -->
+        @foreach (var message in Model.Messages)
+        {
+            <div class="message @(message.SenderId == Model.SenderId ? "sender" : "receiver")">
+                <strong>@message.SenderName:</strong>
+                <p>@message.Content</p>
+                <span class="text-muted text-sm">@message.SentAt.ToString("g")</span>
+            </div>
+        }
+    </div>
+
+    <div class="send-message mt-4">
+        <!-- Yeni mesaj gönderme formu -->
+        <form asp-action="SendMessage" method="post">
+            <input type="hidden" name="ReceiverId" value="@Model.ReceiverId" />
+            <div class="form-group">
+                <textarea name="MessageContent" class="form-control" rows="3" placeholder="Type your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Send</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .chat-box {
+        max-height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .message {
+        margin-bottom: 15px;
+    }
+
+    .sender {
+        text-align: right;
+    }
+
+    .receiver {
+        text-align: left;
+    }
+
+    .message strong {
+        display: block;
+    }
+
+    .message p {
+        margin: 5px 0;
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.9/signalr.min.js"></script>
+<script>
+    
+    
+    // const connection = new signalR.HubConnectionBuilder().withUrl("/chathub").build();
+
+    // connection.start().then(function () {
+    //     console.log("Connected to SignalR");
+    // }).catch(function (err) {
+    //     return console.error(err.toString());
+    // });
+
+    // connection.on("ReceiveMessage", function (senderId, message) {
+    //     const chatBox = document.getElementById("chat-box");
+    //     const messageElement = document.createElement("div");
+    //     messageElement.innerHTML = `<strong>${senderId}</strong>: ${message}`;
+    //     chatBox.appendChild(messageElement);
+    // });
+
+    // // Form gönderildiğinde SignalR ile mesajı gönder
+    // document.getElementById("messageForm").addEventListener("submit", function (event) {
+    //     event.preventDefault();
+
+    //     const receiverId = document.getElementById("ReceiverId").value;
+    //     const messageContent = document.getElementById("messageContent").value;
+
+    //     connection.invoke("SendMessage", receiverId, messageContent).then(function () {
+    //         // Formu temizle
+    //         document.getElementById("messageContent").value = "";
+    //     }).catch(function (err) {
+    //         return console.error(err.toString());
+    //     });
+    // });
+
+    const connection = new signalR.HubConnectionBuilder().withUrl("/chathub").build();
+
+    connection.start().then(function () {
+        console.log("Connected to SignalR");
+    }).catch(function (err) {
+        console.error("SignalR Connection Error: ", err.toString());
+    });
+
+    connection.on("ReceiveMessage", function (senderId, message) {
+        const chatBox = document.getElementById("chat-box");
+        const messageElement = document.createElement("div");
+        messageElement.innerHTML = `<strong>${senderId}</strong>: ${message}`;
+        chatBox.appendChild(messageElement);
+    });
+
+
+</script>

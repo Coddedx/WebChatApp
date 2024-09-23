@@ -1,0 +1,31 @@
+﻿@* @using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+ *@
+@using ChapAppSignalR.ViewModels
+@model List<UserViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var user in Model)
+        {
+<div class="col-lg-4 col-md-6">
+    <div class="card mt-5 mt-md-0">
+        <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
+            <a class="d-block blur-shadow-image">
+                <img src="~/assets/img/products/product-2-min.jpg" alt="img-blur-shadow" class="img-fluid border-radius-lg" loading="lazy">
+            </a>
+        </div>
+            <a class="btn btn-outline-primary btn-sm mb-0" asp-controller="Message" asp-action="Index" asp-route-id="@user.Id">Mesaj At!</a>
+            <div class="card-body pt-3">
+            <p class="text-dark mb-2 text-sm">  </p>
+            <a href="javascript:;">
+                    <h5> @user.FirstName @user.LastName </h5>
+            </a>
+            <p>  </p>
+            <a class="btn btn-outline-primary btn-sm mb-0" asp-controller="Clinic" asp-action="Details" asp-route-id="Id">Sayfasına Git</a>
+        </div>
+    </div>
+</div>
+        }

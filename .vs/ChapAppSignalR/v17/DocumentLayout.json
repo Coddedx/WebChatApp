@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|c:\\users\\black\\documents\\github\\chapappsignalr\\chapappsignalr\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|solutionrelative:chapappsignalr\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|c:\\users\\black\\documents\\github\\chapappsignalr\\chapappsignalr\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|solutionrelative:chapappsignalr\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|c:\\users\\black\\documents\\github\\chapappsignalr\\chapappsignalr\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|solutionrelative:chapappsignalr\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|c:\\users\\black\\documents\\github\\chapappsignalr\\chapappsignalr\\services\\rabbitmqlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|solutionrelative:chapappsignalr\\services\\rabbitmqlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|c:\\users\\black\\documents\\github\\chapappsignalr\\chapappsignalr\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|solutionrelative:chapappsignalr\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|c:\\users\\black\\documents\\github\\chapappsignalr\\chapappsignalr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32DA3FD8-2905-43F6-93B4-B59DCEF28624}|ChapAppSignalR\\ChapAppSignalR.csproj|solutionrelative:chapappsignalr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 918,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "ChapAppSignalR\\Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "ChapAppSignalR\\Controllers\\MessageController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAYwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T18:19:56.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Views\\Message\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChapAppSignalR\\Views\\Message\\Index.cshtml",
+              "ToolTip": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Views\\Message\\Index.cshtml",
+              "RelativeToolTip": "ChapAppSignalR\\Views\\Message\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T18:30:17.435Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 766,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "ChapAppSignalR\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "ChapAppSignalR\\Hubs\\ChatHub.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwCsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T17:55:39.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RabbitMqListener.cs",
+              "DocumentMoniker": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Services\\RabbitMqListener.cs",
+              "RelativeDocumentMoniker": "ChapAppSignalR\\Services\\RabbitMqListener.cs",
+              "ToolTip": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Services\\RabbitMqListener.cs",
+              "RelativeToolTip": "ChapAppSignalR\\Services\\RabbitMqListener.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T16:36:42.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RabbitMqService.cs",
+              "DocumentMoniker": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Services\\RabbitMqService.cs",
+              "RelativeDocumentMoniker": "ChapAppSignalR\\Services\\RabbitMqService.cs",
+              "ToolTip": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Services\\RabbitMqService.cs",
+              "RelativeToolTip": "ChapAppSignalR\\Services\\RabbitMqService.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAnwFQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T19:27:21.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Program.cs",
+              "RelativeDocumentMoniker": "ChapAppSignalR\\Program.cs",
+              "ToolTip": "C:\\Users\\black\\Documents\\GitHub\\ChapAppSignalR\\ChapAppSignalR\\Program.cs",
+              "RelativeToolTip": "ChapAppSignalR\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T16:38:04.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
