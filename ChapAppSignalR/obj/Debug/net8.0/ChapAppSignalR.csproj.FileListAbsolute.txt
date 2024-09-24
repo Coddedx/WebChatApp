@@ -144,3 +144,4 @@ C:\Users\black\Documents\GitHub\ChapAppSignalR\ChapAppSignalR\bin\Debug\net8.0\M
 C:\Users\black\Documents\GitHub\ChapAppSignalR\ChapAppSignalR\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
 C:\Users\black\Documents\GitHub\ChapAppSignalR\ChapAppSignalR\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
 C:\Users\black\Documents\GitHub\ChapAppSignalR\ChapAppSignalR\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\black\Documents\GitHub\ChapAppSignalR\ChapAppSignalR\obj\Debug\net8.0\ChapAppSignalR.sourcelink.json

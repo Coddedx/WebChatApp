@@ -25,7 +25,7 @@ namespace ChapAppSignalR.Services
             _channel.QueueDeclare(queue: "chatQueue", durable: false, exclusive: false, autoDelete: false, arguments: null);
 
             // SONRADAN -------------------------
-            ReceiveMessages();  //metodu arka planda sürekli dinleme yapacak ve anlık bildirimler alınabilmesi sağlanılacak
+           // ReceiveMessages();  //metodu arka planda sürekli dinleme yapacak ve anlık bildirimler alınabilmesi sağlanılacak
         }
 
         // SONRADAN (..) İÇİ DEĞİŞTİ ----------------------------
@@ -43,8 +43,11 @@ namespace ChapAppSignalR.Services
 
         public void ReceiveMessages()
         {
-            var consumer = new EventingBasicConsumer(_channel);
+            // SONRADAN--------------------------------
+            //performansı artırmak için Her seferinde sadece bir mesaj alınır ve işlenir
+            _channel.BasicQos(prefetchSize: 0, prefetchCount:1, global:false);
 
+            var consumer = new EventingBasicConsumer(_channel);
 
             // ASYNC SONRADAN --------------------  await _hubContext.Clients.User İÇİN 
             // Received olayına dinleyici ekleme
@@ -54,11 +57,6 @@ namespace ChapAppSignalR.Services
                 var message = Encoding.UTF8.GetString(body);
 
                 // Mesajı işle
-                //var messageDB = new Message()
-                //{
-                //    SenderId = 
-                //};
-
 
                 // SONRADAN---------------------
                 // Mesajı alıcıya SignalR üzerinden gönder

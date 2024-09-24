@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChapAppSignalR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6fe46486591abaedba9812d207a57dcd951c284")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChapAppSignalR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChapAppSignalR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
