@@ -36,7 +36,7 @@ namespace ChapAppSignalR.Controllers
                 Id = user.Id,
                 FirstName = user.FirstName,
                 LastName = user.LastName
-            }).ToList();
+            }).ToList(); //ýndex te list olarak kullanacaðýmýz için 
 
             return View(userVM);
         }

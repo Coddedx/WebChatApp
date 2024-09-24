@@ -10,6 +10,7 @@
 
     <div class="chat-box">
         <!-- Önceki mesajları göster -->
+        @* @(message.SenderId == Model.SenderId ? "sender" : "receiver") message.SenderId (mesajın göndericisi) ile Model.SenderId (şu anki kullanıcının kimliği) eşitse "sender" sınıfını kullanır yoksa  "receiver" sınıfını kullanır. Bu, mesajın stilini gönderen veya alıcı olarak ayırt etmek için kullanılır.*@
         @foreach (var message in Model.Messages)
         {
             <div class="message @(message.SenderId == Model.SenderId ? "sender" : "receiver")">
@@ -65,8 +66,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.9/signalr.min.js"></script>
 <script>
-    
-    
+    //
+
     // const connection = new signalR.HubConnectionBuilder().withUrl("/chathub").build();
 
     // connection.start().then(function () {

@@ -20,50 +20,8 @@ namespace ChapAppSignalR.Data
                     await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
 
                 //Users
+                //Uygulamaya yeni kullanıcılar eklemek. Var olan kullanıcılara roller atamak.Kullanıcı bilgilerini doğrulamak veya parolasını değiştirmek. için userManager kullanılır yapmıcaksan gerek yok 
                 var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-                
-                
-                //string adminUserEmail = "teddysmithdeveloper@gmail.com";
-
-                //var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
-                //if (adminUser == null)
-                //{
-                //    var newAdminUser = new AppUser()
-                //    {
-                //        UserName = "teddysmithdev",
-                //        Email = adminUserEmail,
-                //        EmailConfirmed = true,
-                //        Adress = new Address()
-                //        {
-                //            Street = "123 Main St",
-                //            City = "Charlotte",
-                //            State = "NC"
-                //        }
-                //    };
-                //    await userManager.CreateAsync(newAdminUser, "Coding@1234?");
-                //    await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
-                //}
-
-                //string appUserEmail = "user@etickets.com";
-
-                //var appUser = await userManager.FindByEmailAsync(appUserEmail);
-                //if (appUser == null)
-                //{
-                //    var newAppUser = new AppUser()
-                //    {
-                //        UserName = "app-user",
-                //        Email = appUserEmail,
-                //        EmailConfirmed = true,
-                //        Adress = new Address()
-                //        {
-                //            Street = "123 Main St",
-                //            City = "Charlotte",
-                //            State = "NC"
-                //        }
-                //    };
-                //    await userManager.CreateAsync(newAppUser, "Coding@1234?");
-                //    await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
-                //}
             }
         }
     }

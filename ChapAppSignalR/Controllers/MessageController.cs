@@ -26,7 +26,7 @@ namespace ChapAppSignalR.Controllers
         // Eski mesajları göstermek için
         public async Task<IActionResult> Index(string id) //receiver ıd
         {
-            var senderId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var senderId = User.FindFirstValue(ClaimTypes.NameIdentifier); //claim, genellikle kullanıcının veritabanındaki Id alanına denk gelir
             //var userId = _userManager.GetUserId(User);
 
             //await
@@ -47,7 +47,7 @@ namespace ChapAppSignalR.Controllers
                 messageVM.Messages = messages.Select(m => new MessageDto
                 {
                     SenderId = m.SenderId,
-                    SenderName = m.Sender != null ? m.Sender.FirstName + " " + m.Sender.LastName : "Bilinmeyen???",
+                    SenderName = m.Sender != null ? m.Sender.FirstName + " " + m.Sender.LastName : "Bilinmeyen???", //sender ın null olup olmadığı kotnrol edilip değilse isim soy isim birleştirliyor
                     Content = m.Content,
                     SentAt = m.SenAt
                 }).ToList();            
@@ -71,18 +71,17 @@ namespace ChapAppSignalR.Controllers
                 SenAt = DateTime.UtcNow
             };
 
-            // Mesajı veritabanına ekleyin
+            // Mesajı veritabanına ekle
             _context.Messages.Add(newMessage);
             await _context.SaveChangesAsync();
             
-            // SONRADAN (..) İÇİ DEĞİŞTİ -----------------------------------
-            // RabbitMQ kullanarak mesajı kuyruklayın
-            _rabbitMqService.SendMessage(senderId, messageVM.ReceiverId, newMessage.Content); //newMessage.Content
+            // RabbitMQ kullanarak mesajı kuyrukla
+            _rabbitMqService.SendMessage(senderId, messageVM.ReceiverId, newMessage.Content); 
 
-            // SignalR kullanarak mesajı alıcıya anında iletin
+            // SignalR kullanarak mesajı alıcıya anında ilet
             await _hubContext.Clients.User(messageVM.ReceiverId).SendAsync("ReceiveMessage", senderId, newMessage.Content);
 
-            // Göndericiye de mesajın iletilmesini sağlamak
+            // Göndericiye de mesajın iletilmesini sağla
             await _hubContext.Clients.User(senderId).SendAsync("ReceiveMessage", senderId, newMessage.Content);
 
             return RedirectToAction("Index", new { id = messageVM.ReceiverId });

@@ -6,7 +6,7 @@ namespace ChapAppSignalR.ViewModels
     public class LoginViewModel
     {
         //you want to put validation to view model you rarely put validation on your actual domain models
-        [Display(Name ="Email Address")] //this is validation annotations. this will show up on the view
+        [Display(Name ="Email Address")] 
         [Required(ErrorMessage ="Email address is required")]
         public string EmailAddress { get; set; }
 
